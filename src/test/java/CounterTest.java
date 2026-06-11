@@ -35,4 +35,10 @@ public class CounterTest {
 			assertEquals(testCounter.getCount(), i * -1);
 		}
 	}
+
+	@Test
+	public void testIntentionalFailure() {
+		// Tes ini sengaja dibuat gagal untuk mencoba fitur Continuous Testing di GitHub Actions
+		assertEquals("Tes ini sengaja disalahkan", 1, 2);
+	}
 }
